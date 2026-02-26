@@ -1,0 +1,13 @@
+[2025-03-28T20:59:16.424Z] Starting database setup script
+[2025-03-28T20:59:16.425Z] Starting database setup process
+[2025-03-28T20:59:16.426Z] Using database user: SRRA
+[2025-03-28T20:59:16.426Z] Using connection string: localhost:1521/orcl
+[2025-03-28T20:59:16.427Z] Connecting to Oracle database...
+[2025-03-28T20:59:16.498Z] Connected to database successfully
+[2025-03-28T20:59:16.499Z] Dropping existing database objects...
+[2025-03-28T20:59:16.499Z] Executing database schema script...
+[2025-03-28T20:59:16.500Z] Creating admin user...
+[2025-03-28T20:59:16.588Z] Password hashed successfully
+[2025-03-28T20:59:16.603Z] Admin user created successfully
+[2025-03-28T20:59:16.604Z] Database setup completed successfully
+[2025-03-28T20:59:16.607Z] Database connection closed

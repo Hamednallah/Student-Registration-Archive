@@ -1,0 +1,28 @@
+[2025-03-19T18:31:58.504Z] Starting database setup script
+[2025-03-19T18:31:58.509Z] Starting database setup process
+[2025-03-19T18:31:58.509Z] Using database user: SRRA
+[2025-03-19T18:31:58.509Z] Using connection string: localhost:1521/orcl
+[2025-03-19T18:31:58.510Z] Connecting to Oracle database...
+[2025-03-19T18:31:58.574Z] Connected to database successfully
+[2025-03-19T18:31:58.575Z] Dropping existing database objects...
+[2025-03-19T18:31:58.593Z] Warning: TABLE SRRA.RECEIPT does not exist
+[2025-03-19T18:31:58.597Z] Warning: TABLE SRRA.STUDENT does not exist
+[2025-03-19T18:31:58.600Z] Warning: TABLE SRRA.DEPARTMENT does not exist
+[2025-03-19T18:31:58.602Z] Warning: TABLE SRRA.USERS does not exist
+[2025-03-19T18:31:58.625Z] Warning: Sequence SRRA.DEPARTMENT_ID_SEQ does not exist
+[2025-03-19T18:31:58.626Z] Warning: Sequence SRRA.RECEIPT_ID_SEQ does not exist
+[2025-03-19T18:31:58.627Z] Executing database schema script...
+[2025-03-19T18:31:58.627Z] Reading SQL file: D:\Projects\Port Sudan National University Student Registration Receipts Archive\last\server\scripts\db-schema.sql
+[2025-03-19T18:31:58.628Z] Found 22 SQL statements to execute
+[2025-03-19T18:31:58.628Z] Executing statement 1/22: CREATE USER SRRA IDENTIFIED BY ORCL
+QUOTA UNLIMITED ON USERS
+DEFAULT TABLESPACE ...
+[2025-03-19T18:31:58.663Z] Error executing statement 1: ORA-01920: user name 'SRRA' conflicts with another user or role name
+[2025-03-19T18:31:58.663Z] Full statement: CREATE USER SRRA IDENTIFIED BY ORCL
+QUOTA UNLIMITED ON USERS
+DEFAULT TABLESPACE USERS
+[2025-03-19T18:31:58.663Z] Error executing script: ORA-01920: user name 'SRRA' conflicts with another user or role name
+[2025-03-19T18:31:58.664Z] Error during database setup:
+[2025-03-19T18:31:58.664Z] Error message: ORA-01920: user name 'SRRA' conflicts with another user or role name
+[2025-03-19T18:31:58.664Z] Oracle error code: 1920
+[2025-03-19T18:31:58.668Z] Database connection closed

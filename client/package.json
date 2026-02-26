@@ -1,0 +1,13 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "Client application for Port Sudan National University Student Registration Receipts Archive",
+  "type": "module",
+  "scripts": {
+    "dev": "live-server --port=3000 --host=localhost --entry-file=index.html --mount=/src:./src --mount=/assets:./assets --mount=/service-worker.js:./src/service-worker.js --mount=/:./src --watch=index.html,src,assets,components,utils --mime-types='{\"js\":\"application/javascript\",\"css\":\"text/css\"}'",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

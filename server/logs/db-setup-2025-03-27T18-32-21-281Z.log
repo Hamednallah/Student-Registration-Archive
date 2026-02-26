@@ -1,0 +1,10 @@
+[2025-03-27T18:32:21.284Z] Starting database setup script
+[2025-03-27T18:32:21.285Z] Starting database setup process
+[2025-03-27T18:32:21.285Z] Using database user: SRRA
+[2025-03-27T18:32:21.286Z] Using connection string: localhost:1521/orcl
+[2025-03-27T18:32:21.286Z] Connecting to Oracle database...
+[2025-03-27T18:32:21.325Z] Starting database setup process
+[2025-03-27T18:32:21.325Z] Using database user: SRRA
+[2025-03-27T18:32:21.326Z] Using connection string: localhost:1521/orcl
+[2025-03-27T18:32:21.326Z] Connecting to Oracle database...
+[2025-03-27T18:32:23.522Z] Error during database setup:

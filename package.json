@@ -1,0 +1,39 @@
+{
+  "name": "port-sudan-national-university-student-registration-receipts-archive",
+  "version": "1.0.0",
+  "description": "Student Registration Receipts Archive System for Port Sudan National University",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "test": "node tests/test-scripts.js",
+    "test:client": "npx jest tests/client --config=jest.config.js",
+    "test:server": "node tests/config/run-server-tests.js",
+    "test:server:old": "npx jest tests/server --config=jest.config.js",
+    "test:coverage": "npx jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "concurrently": "^8.2.2",
+    "i18next": "^24.2.3",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-http-backend": "^3.0.2",
+    "oracledb": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.6",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/tests/"
+    ]
+  }
+}

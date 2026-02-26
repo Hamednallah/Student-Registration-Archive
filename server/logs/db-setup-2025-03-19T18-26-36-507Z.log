@@ -1,0 +1,14 @@
+[2025-03-19T18:26:36.510Z] Starting database setup...
+[2025-03-19T18:26:36.516Z] Connecting to database...
+[2025-03-19T18:26:36.572Z] Connected to database successfully
+[2025-03-19T18:26:36.572Z] Dropping existing objects...
+[2025-03-19T18:26:36.603Z] Warning: TABLE SRRA.RECEIPT does not exist
+[2025-03-19T18:26:36.607Z] Warning: TABLE SRRA.STUDENT does not exist
+[2025-03-19T18:26:36.609Z] Warning: TABLE SRRA.DEPARTMENT does not exist
+[2025-03-19T18:26:36.612Z] Warning: TABLE SRRA.USERS does not exist
+[2025-03-19T18:26:36.614Z] Error during database setup:
+[2025-03-19T18:26:36.615Z] {
+  "errorNum": 933,
+  "offset": 37
+}
+[2025-03-19T18:26:36.618Z] Database connection closed

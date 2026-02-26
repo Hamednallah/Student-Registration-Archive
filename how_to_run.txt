@@ -1,0 +1,28 @@
+افتح شاشة الاوامر عن طريق الضغط على Ctrl + ` او من قائمة view 
+اذهب الى المسار last
+نفذ الامر npm run dev 
+ملاحظة انتبه الى اغلاق سيرفر الموقع بطريقة صحيحة عن تنفيذ الامر في نفس شاشة الاوامر  Ctrl + C
+اذا واجعت مشكلة نفذ الامر taskkill /im node.exe
+
+components.js:63  Translation missing for key: backToList
+(anonymous) @ components.js:63
+applyTranslations @ components.js:39
+initializeComponents @ components.js:123
+(anonymous) @ main.js:156
+Promise.then
+init @ main.js:154
+components.js:63  Translation missing for key: selectSemester
+(anonymous) @ components.js:63
+applyTranslations @ components.js:39
+initializeComponents @ components.js:123
+(anonymous) @ main.js:156
+Promise.then
+init @ main.js:154
+components.js:63  Translation missing for key: selectStatus
+(anonymous) @ components.js:63
+applyTranslations @ components.js:39
+initializeComponents @ components.js:123
+(anonymous) @ main.js:156
+Promise.then
+init @ main.js:154
+components.js:63  Translation missing for key: createStudent

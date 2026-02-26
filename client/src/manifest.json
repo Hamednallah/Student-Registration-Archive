@@ -1,0 +1,20 @@
+{
+  "name": "Port Sudan Ahlia University Registration System",
+  "short_name": "PSAC Registration",
+  "description": "Student Registration Receipts Management System for Port Sudan Ahlia University",
+  "start_url": "/src/pages/index.html",
+  "display": "standalone",
+  "background_color": "#5A2D8A",
+  "theme_color": "#5A2D8A",
+  "orientation": "any",
+  "lang": "ar",
+  "dir": "rtl",
+  "prefer_related_applications": false,
+  "icon": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

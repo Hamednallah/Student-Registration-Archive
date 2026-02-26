@@ -1,0 +1,16 @@
+[2025-03-19T18:29:05.086Z] Starting database setup script
+[2025-03-19T18:29:05.092Z] Starting database setup process
+[2025-03-19T18:29:05.092Z] Using database user: SRRA
+[2025-03-19T18:29:05.093Z] Using connection string: localhost:1521/orcl
+[2025-03-19T18:29:05.093Z] Connecting to Oracle database...
+[2025-03-19T18:29:05.158Z] Connected to database successfully
+[2025-03-19T18:29:05.159Z] Dropping existing database objects...
+[2025-03-19T18:29:05.164Z] Warning: TABLE SRRA.RECEIPT does not exist
+[2025-03-19T18:29:05.167Z] Warning: TABLE SRRA.STUDENT does not exist
+[2025-03-19T18:29:05.170Z] Warning: TABLE SRRA.DEPARTMENT does not exist
+[2025-03-19T18:29:05.219Z] Warning: TABLE SRRA.USERS does not exist
+[2025-03-19T18:29:05.221Z] Error dropping SEQUENCE SRRA.DEPARTMENT_ID_SEQ: ORA-00933: SQL command not properly ended
+[2025-03-19T18:29:05.221Z] Error during database setup:
+[2025-03-19T18:29:05.221Z] Error message: ORA-00933: SQL command not properly ended
+[2025-03-19T18:29:05.222Z] Oracle error code: 933
+[2025-03-19T18:29:05.224Z] Database connection closed
