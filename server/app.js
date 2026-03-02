@@ -20,11 +20,16 @@ if (!process.env.NODE_ENV) {
   logger.info('NODE_ENV not set, defaulting to development mode');
 }
 
+// Ensure JWT secret is set
+if (!process.env.JWT_SECRET) {
+  logger.error('FATAL ERROR: JWT_SECRET environment variable is not defined.');
+  process.exit(1);
+}
+
 // Create Express app
 const app = express();
 
 // Security middleware
-/*
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
@@ -33,16 +38,16 @@ app.use(helmet({
       styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
       fontSrc: ["'self'", "https://fonts.gstatic.com"],
       imgSrc: ["'self'", "data:"],
-      connectSrc: ["'self'", "http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:5000", "http://127.0.0.1:5000", "https://l9hcq09q-3000.euw.devtunnels.ms", "https://l9hcq09q-5000.euw.devtunnels.ms"]
+      connectSrc: ["'self'", "http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:5000", "http://127.0.0.1:5000", ...(process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : [])]
     }
   }
 }));
-*/
 
 // CORS configuration
 app.use(require('cors')({
-  origin: function(origin, callback) {
-    const allowedOrigins = ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5000', 'http://127.0.0.1:5000', "https://l9hcq09q-3000.euw.devtunnels.ms", "https://l9hcq09q-5000.euw.devtunnels.ms"];
+  origin: function (origin, callback) {
+    const envOrigins = process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : [];
+    const allowedOrigins = ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5000', 'http://127.0.0.1:5000', ...envOrigins];
     // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
@@ -73,8 +78,8 @@ const limiter = rateLimit({
   legacyHeaders: false,
   message: 'Too many requests from this IP, please try again later'
 });
-//app.use('/api/login', limiter); // Apply to login endpoint specifically
-//app.use('/api/register', limiter); // Apply to register endpoint
+app.use('/api/login', limiter); // Apply to login endpoint specifically
+app.use('/api/register', limiter); // Apply to register endpoint
 
 // Body parsing
 app.use(bodyParser.json({ limit: '1mb' }));
@@ -142,9 +147,9 @@ app.get('/health', (req, res) => {
 // 404 Page - Catch all handler for all routes not defined above
 app.use((req, res) => {
   if (req.path.startsWith('/api')) {
-    return res.status(404).json({ 
-      success: false, 
-      message: 'API endpoint not found' 
+    return res.status(404).json({
+      success: false,
+      message: 'API endpoint not found'
     });
   }
   res.status(404).sendFile(path.join(__dirname, '..', 'client', 'src', 'pages', '404.html'));
@@ -159,7 +164,7 @@ app.use(errorHandler);
 // Add graceful shutdown handling for database
 const gracefulShutdown = async (signal) => {
   logger.info(`${signal} received, starting graceful shutdown...`);
-  
+
   // Close database connection
   try {
     await db.close();
@@ -167,13 +172,13 @@ const gracefulShutdown = async (signal) => {
   } catch (err) {
     logger.error('Error closing database connections:', err);
   }
-  
+
   // Close server
   server.close(() => {
     logger.info('HTTP server closed');
     process.exit(0);
   });
-  
+
   // Force close if graceful shutdown takes too long
   setTimeout(() => {
     logger.error('Forcing shutdown after timeout');

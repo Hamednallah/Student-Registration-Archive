@@ -19,11 +19,11 @@ let isInitialLoad = true;
 async function loadStudents(page = 1, size = 10) {
     currentPage = page;
     pageSize = size;
-    
+
     try {
-        const response = await apiService.get(`/students?page=${page}&size=${size}`);
+        const response = await apiService.get(`/students?page=${page}&limit=${size}`);
         const { students, totalRecords } = response.data;
-        
+
         displayStudents(students);
         setupPagination(totalRecords, size, page);
     } catch (error) {
@@ -49,16 +49,16 @@ async function loadStudents(page = 1, size = 10) {
 function setupPagination(totalRecords, size, currentPage) {
     const pagination = document.getElementById('pagination');
     if (!pagination) return;
-    
+
     const totalPages = Math.ceil(totalRecords / size);
-    
+
     if (totalPages <= 1) {
         pagination.innerHTML = '';
         return;
     }
-    
+
     let html = '';
-    
+
     // زر الصفحة السابقة
     html += `
         <button class="btn-pagination ${currentPage === 1 ? 'disabled' : ''}" 
@@ -66,12 +66,12 @@ function setupPagination(totalRecords, size, currentPage) {
             <i class="fa fa-chevron-left"></i>
         </button>
     `;
-    
+
     // أزرار الصفحات
     const maxPagesToShow = 5;
     const startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
     const endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
-    
+
     for (let i = startPage; i <= endPage; i++) {
         html += `
             <button class="btn-pagination ${i === currentPage ? 'active' : ''}" 
@@ -80,7 +80,7 @@ function setupPagination(totalRecords, size, currentPage) {
             </button>
         `;
     }
-    
+
     // زر الصفحة التالية
     html += `
         <button class="btn-pagination ${currentPage === totalPages ? 'disabled' : ''}" 
@@ -88,7 +88,7 @@ function setupPagination(totalRecords, size, currentPage) {
             <i class="fa fa-chevron-right"></i>
         </button>
     `;
-    
+
     pagination.innerHTML = html;
 }
 
@@ -105,16 +105,16 @@ function displayStudents(students) {
             </tr>
         `;
         return;
-    }   
+    }
 
-    
+
     tbody.innerHTML = students.map(student => `
         <tr>
             <td>${student.STUDENT_ID}</td>
             <td>${student.FULL_NAME}</td>
             <td>${student.SEMESTER_NO}</td>
             <td>${student.DEPARTMENT_NAME}</td>
-            <td><span data-i18n="${student.registration_Status === 'F' ? 'fullyRegisteredStatus' : 'partiallyRegisteredStatus'}">${student.REGISTRATION_STATUS === 'F' ? 'Fully Registered' : 'Partially Registered'}</span></td>
+            <td><span data-i18n="${student.REGISTRATION_STATUS === 'F' ? 'fullyRegisteredStatus' : 'partiallyRegisteredStatus'}">${student.REGISTRATION_STATUS === 'F' ? 'Fully Registered' : 'Partially Registered'}</span></td>
             <td>
                 <button class="btn-secondary btn-sm" onclick="window.location.href='?page=students&action=edit&id=${student.STUDENT_ID}'">
                     <i class="fa fa-edit"></i>
@@ -133,7 +133,7 @@ function displayStudents(students) {
 function initStudentsList() {
     // إتاحة دالة تحميل الصفحة عالميًا
     window.loadStudentsPage = (page) => loadStudents(page, pageSize);
-    
+
     // تحميل البيانات الأولية
     loadStudents(currentPage, pageSize);
 }
@@ -149,13 +149,13 @@ async function deleteStudent(id) {
     let res
     try {
         res = await apiService.delete(`/students/${id}`);
-        if(res.status === 409){
+        if (res.status === 409) {
             console.log("conflict")
             showError("Cannot delete student - it is referenced by other records");
         }
-        if(res.status === 200){
+        if (res.status === 200) {
             showSuccess(document.querySelector('[data-i18n="studentDeletedSuccess"]')?.textContent || 'تم حذف الطالب بنجاح');
-            
+
             // إعادة تحميل الصفحة بعد الحذف الناجح
             setTimeout(() => {
                 window.location.reload();

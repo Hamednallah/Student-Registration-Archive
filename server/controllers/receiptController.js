@@ -31,33 +31,6 @@ const getAllReceipts = async (req, res) => {
   }
 };
 
-// Search receipts (now handled by getAllReceipts)
-const searchReceipts = async (req, res) => {
-
-  const { q, date, page = 1, limit = 20 } = req.query;
-  const offset = (page - 1) * limit;
-
-  try {
-    const filters = { q };
-    if (date) filters.date = date;
-    const receipts = await ReceiptModel.getAllReceipts(limit, offset, filters);
-    const total = await ReceiptModel.getReceiptsCount(filters);
-
-    successResponse(res, {
-      data: receipts,
-      pagination: {
-        page: Number(page),
-        limit: Number(limit),
-        total,
-        totalPages: Math.ceil(total / limit)
-      }
-    }, 200, 'Receipts retrieved successfully');
-  } catch (error) {
-    logger.error('Error searching receipts:', error);
-    errorResponse(res, 'Error retrieving receipts', 500);
-  }
-};
-
 
 // Create new receipt
 const createReceipt = async (req, res) => {
@@ -76,23 +49,14 @@ const createReceipt = async (req, res) => {
 
     // Get user ID from auth middleware
     const userId = req.user.id;
-
-    if (!student_id || !amount_number || !amount_letters || !paid_items || !semester_no) {
-      return errorResponse(res, 'Missing required fields', 400);
-    }
-
-    // Verify the student exists
+    // Verify the student exists explicitly before creating receipt
     try {
       await StudentModel.getStudentById(student_id);
     } catch (error) {
-      const studentData = {
-        student_id: student_id,
-        full_name: student_name,
-        semester_no: semester_no,
-        department_id: department_id,
-        registration_status: paid_items === 'TF' ? 'F': 'P'
-      };
-      const student = await StudentModel.createStudent(studentData);
+      if (error.message === 'Student not found') {
+        return errorResponse(res, 'Student not found', 404);
+      }
+      throw error;
     }
 
     const receiptData = {
@@ -107,7 +71,7 @@ const createReceipt = async (req, res) => {
     };
 
     const receiptId = await ReceiptModel.createReceipt(receiptData);
-    
+
     logger.info('Receipt created with ID:', receiptId);
     successResponse(res, { receipt_id: receiptId }, 201, 'Receipt created successfully');
   } catch (error) {
@@ -142,13 +106,7 @@ const updateReceipt = async (req, res) => {
     amount_letters,
     paid_items,
     semester_no,
-    comments
   } = req.body;
-
-  // Validate required fields
-  if (!student_id || !bank_receipt_no || !amount_number || !amount_letters || !paid_items || !semester_no) {
-    return errorResponse(res, 'Missing required fields', 400);
-  }
 
   try {
     const receiptData = {
@@ -200,14 +158,14 @@ const getRecentReceipts = async (req, res) => {
   try {
     // Get the 10 most recent receipts
     const recentReceipts = await ReceiptModel.getRecentReceipts(10);
-    successResponse(res,recentReceipts, 200,  'Recent receipts retrieved successfully');
+    successResponse(res, recentReceipts, 200, 'Recent receipts retrieved successfully');
   } catch (error) {
     logger.error('Error getting recent receipts:', error);
     errorResponse(res, 'Error retrieving recent receipts', 500);
   }
 };
 
- 
+
 const getAmounts = async (req, res) => {
   try {
     const amounts = await ReceiptModel.getAmounts();
@@ -226,6 +184,5 @@ module.exports = {
   deleteReceipt,
   getReceiptsByStudentId,
   getRecentReceipts,
-  searchReceipts,
   getAmounts
 };
