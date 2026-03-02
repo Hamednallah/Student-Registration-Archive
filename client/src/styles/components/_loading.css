@@ -1,0 +1,112 @@
+/* ============================================================
+   LOADING STATES & SPINNERS
+   ============================================================ */
+
+/* ── App-level loading spinner ──────────────────────────────── */
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--clr-brand-200);
+  border-top-color: var(--clr-primary);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Inline spinner ─────────────────────────────────────────── */
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--clr-brand-200);
+  border-top-color: var(--clr-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* ── Chart loading overlay ──────────────────────────────────── */
+.chart-loading-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  min-height: 200px;
+  font-size: var(--font-size-sm);
+  color: var(--clr-text-muted);
+}
+
+/* ── Skeleton loaders ───────────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--clr-neutral-200) 0%,
+    var(--clr-neutral-100) 50%,
+    var(--clr-neutral-200) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+  border-radius: var(--radius-sm);
+  color: transparent;
+  user-select: none;
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeleton-text {
+  height: 1em;
+  width: 80%;
+}
+
+.skeleton-text.short {
+  width: 40%;
+}
+
+.skeleton-rect {
+  height: 80px;
+  width: 100%;
+  border-radius: var(--radius-md);
+}
+
+/* ── Page-level full-screen loading state ───────────────────── */
+.page-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: var(--space-4);
+  color: var(--clr-text-muted);
+  font-size: var(--font-size-base);
+}
+
+/* ── Chart container ────────────────────────────────────────── */
+.chart-container {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-container canvas {
+  max-width: 100%;
+}
+
+.chart-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--clr-error-600);
+  font-size: var(--font-size-sm);
+  padding: var(--space-8);
+}

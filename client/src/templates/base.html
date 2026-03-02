@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port Sudan Ahlia University</title>
+        
+    <!-- Fonts -->  
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    
+    <!-- Application CSS -->
+    <link rel="stylesheet" href="/src/styles/main.css">
+    
+    <!-- PWA Support -->
+    <link rel="manifest" href="/src/manifest.json">
+    <meta name="theme-color" content="#5A2D8A">
+    <link rel="apple-touch-icon" href="/src/assets/logo.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="PSAC Registration">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header - will be loaded dynamically if needed -->
+        <header id="header">
+        <!-- Navigation -->
+        <nav class="main-navbar">
+            <div class="container navbar-content">
+                <div class="navbar-brand">
+                    <a href="/" class="brand-link">
+                        <img src="/assets/logo.png" alt="University Logo" class="brand-logo">
+                        <h1 class="brand-title" data-i18n="siteTitle">Port Sudan Ahlia University</h1>
+                    </a>
+                </div>
+                
+                <button id="navbarToggle" class="navbar-toggle" aria-label="Toggle navigation" data-aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button> 
+                
+                <div id="navbarMenu" class="navbar-menu">
+                    <ul class="navbar-nav">
+                        {{#if (eq title "Login")}}
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link" data-i18n="featuresNav">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link" data-i18n="aboutNav">About</a>
+                        </li>
+                        {{/if}}
+                        {{#if isAuthenticated}}
+                            <li class="nav-item">
+                                <a href="?page=dashboard" class="nav-link" data-i18n="dashboardNav">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="?page=students" class="nav-link" data-i18n="studentsNav">Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="?page=departments" class="nav-link" data-i18n="departmentsNav">Departments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="?page=receipts" class="nav-link" data-i18n="receiptsNav">Receipts</a>
+                            </li>
+                            {{#if isAdmin}}
+                            <li class="nav-item">
+                                <a href="?page=users" class="nav-link" data-i18n="usersNav">Users</a>
+                            </li>
+                            {{/if}}
+                        {{/if}}
+                        <li class="nav-item">
+                            <button class="lang-switch" onclick="switchLanguage()">
+                                <i class="fas fa-language"></i>
+                                <span class="lang-label">{{#if isArabic}}EN{{else}}ع{{/if}}</span>
+                            </button>
+                        </li>
+                        
+                        {{#if isAuthenticated}}
+                            <!-- User Information and Logout -->
+                            <li class="nav-item user-nav-item dropdown">
+                                <div class="user-info">
+                                    <span class="user-name">{{currentUser.username}}</span>
+                                    <span class="user-role">{{currentUser.role}}</span>
+                                </div>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <button id="logoutBtn" class="btn-logout">
+                                    <i class="fas fa-sign-out-alt"></i> <span data-i18n="logoutButton">Logout</span>
+                                </button>
+                            </li>
+                        {{/if}}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <main id="main-content">
+            {{{content}}}
+        </main>
+        
+        <!-- Footer - will be loaded dynamically if needed -->
+        <footer id="footer">
+        <div class="container">
+            <p><span data-i18n="copyright">{{currentYear}} Port Sudan Ahlia University. All rights reserved.</span></p>
+        </div>
+    </footer>
+    
+    <!-- Application Scripts -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

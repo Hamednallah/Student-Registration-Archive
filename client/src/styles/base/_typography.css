@@ -1,0 +1,153 @@
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+/* ── Heading scale ──────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--clr-text-primary);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h1 { font-size: var(--font-size-3xl); }
+h2 { font-size: var(--font-size-2xl); }
+h3 { font-size: var(--font-size-xl); }
+h4 { font-size: var(--font-size-lg); }
+h5 { font-size: var(--font-size-md); }
+h6 { font-size: var(--font-size-base); }
+
+/* ── Body text ──────────────────────────────────────────────── */
+p {
+  line-height: var(--line-height-normal);
+  color: var(--clr-text-primary);
+}
+
+.text-sm    { font-size: var(--font-size-sm); }
+.text-xs    { font-size: var(--font-size-xs); }
+.text-lg    { font-size: var(--font-size-lg); }
+.text-xl    { font-size: var(--font-size-xl); }
+
+.text-muted    { color: var(--clr-text-secondary); }
+.text-primary  { color: var(--clr-primary); }
+.text-success  { color: var(--clr-success-600); }
+.text-error    { color: var(--clr-error-600); }
+.text-warning  { color: var(--clr-warning-600); }
+
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-bold   { font-weight: var(--font-weight-bold); }
+
+/* ── Page-level headings ────────────────────────────────────── */
+.page-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-text-primary);
+  position: relative;
+  padding-bottom: var(--space-4);
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--clr-accent);
+  border-radius: var(--radius-full);
+}
+
+.section-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-brand-800);
+  margin-bottom: var(--space-6);
+}
+
+/* ── Brand title (in navbar) ────────────────────────────────── */
+.brand-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-text-on-brand);
+  line-height: var(--line-height-snug);
+  letter-spacing: 0;
+}
+
+/* ── Help / hint text ───────────────────────────────────────── */
+.help-text,
+.form-text {
+  font-size: var(--font-size-xs);
+  color: var(--clr-text-muted);
+  line-height: var(--line-height-snug);
+  margin-top: var(--space-1);
+  display: block;
+}
+
+/* ── Labels ─────────────────────────────────────────────────── */
+.label-required::after {
+  content: ' *';
+  color: var(--clr-error-600);
+}
+
+/* ── Badge / pill text ──────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 2px var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.badge-primary {
+  background: var(--clr-brand-200);
+  color: var(--clr-brand-800);
+}
+
+.badge-success {
+  background: var(--clr-success-100);
+  color: var(--clr-success-700);
+}
+
+.badge-error {
+  background: var(--clr-error-100);
+  color: var(--clr-error-700);
+}
+
+.badge-warning {
+  background: var(--clr-warning-100);
+  color: var(--clr-warning-700);
+}
+
+.badge-gold {
+  background: var(--clr-gold-200);
+  color: var(--clr-gold-600);
+}
+
+/* ── Registration status badges ─────────────────────────────── */
+.status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.status-badge-R,   /* Registered / complete */
+.status-badge-C {
+  background: var(--clr-success-100);
+  color: var(--clr-success-700);
+}
+
+.status-badge-P {  /* Pending */
+  background: var(--clr-warning-100);
+  color: var(--clr-warning-700);
+}
+
+.status-badge-I {  /* Incomplete */
+  background: var(--clr-error-100);
+  color: var(--clr-error-700);
+}

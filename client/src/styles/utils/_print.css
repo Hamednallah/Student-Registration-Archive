@@ -1,0 +1,113 @@
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+
+@media print {
+
+  /* ── Hide non-content elements ──────────────────────────────── */
+  .main-navbar,
+  #footer,
+  .btn-primary,
+  .btn-secondary,
+  .btn-danger,
+  .btn-ghost,
+  .btn-icon,
+  .btn-logout,
+  .form-actions,
+  .filters-row,
+  .pagination,
+  #message-container,
+  .navbar-toggle {
+    display: none !important;
+  }
+
+  /* ── Page setup ────────────────────────────────────────────── */
+  * {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12pt;
+    font-family: 'Tajawal', 'Arial', sans-serif;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* ── Tables — print friendly ────────────────────────────────── */
+  .table-container {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+
+  thead tr {
+    background: #3D1E60 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  thead th {
+    color: #fff !important;
+    font-size: 9pt;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #ddd !important;
+  }
+
+  tbody tr:nth-child(even) {
+    background: #f8f6ff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ── Form container ─────────────────────────────────────────── */
+  .form-container {
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* ── Page breaks ────────────────────────────────────────────── */
+  .widget,
+  .stat-card,
+  .form-group {
+    break-inside: avoid;
+  }
+
+  /* ── Print receipt window ───────────────────────────────────── */
+  .print-receipt-body {
+    padding: 20px !important;
+  }
+
+  .print-header {
+    border-bottom-color: #5A2D8A !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-university-name {
+    color: #3D1E60 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-receipt-title {
+    color: #5A2D8A !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-table .label {
+    background: #FAF8FD !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

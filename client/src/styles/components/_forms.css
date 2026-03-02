@@ -1,0 +1,403 @@
+/* ============================================================
+   FORMS
+   ============================================================ */
+
+/* ── Form wrapper ───────────────────────────────────────────── */
+.form,
+form.form {
+  width: 100%;
+}
+
+/* ── Form container (card wrapping a form) ──────────────────── */
+.form-container {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-8);
+  margin-top: var(--space-6);
+  max-width: 780px;
+}
+
+/* ── Form heading strip ─────────────────────────────────────── */
+.form-container h1 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-brand-900);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-4);
+  border-bottom: 2px solid var(--clr-brand-200);
+  position: relative;
+}
+
+.form-container h1::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  inset-inline-start: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--clr-accent);
+}
+
+/* ── Form group ─────────────────────────────────────────────── */
+.form-group {
+  margin-bottom: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.form-group:last-of-type {
+  margin-bottom: 0;
+}
+
+/* ── Two-column form layout ─────────────────────────────────── */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+/* ── Label ──────────────────────────────────────────────────── */
+.form-group label,
+label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--clr-neutral-700);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+/* ── Base input / textarea / select ─────────────────────────── */
+.form-control,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  height: var(--input-height);
+  padding: 0 var(--input-padding-x);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: var(--clr-text-primary);
+  background: var(--input-bg);
+  border: 1.5px solid var(--input-border);
+  border-radius: var(--input-radius);
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background var(--transition-fast);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea.form-control,
+textarea {
+  height: auto;
+  padding: var(--space-3) var(--input-padding-x);
+  resize: vertical;
+  line-height: var(--line-height-normal);
+}
+
+/* ── Focus ──────────────────────────────────────────────────── */
+.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="search"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--clr-border-focus);
+  box-shadow: var(--input-focus-ring);
+  background: var(--clr-surface);
+  outline: none;
+}
+
+/* ── Invalid state ──────────────────────────────────────────── */
+.form-control.is-invalid,
+.form-control:invalid:not(:placeholder-shown) {
+  border-color: var(--clr-border-error);
+  box-shadow: 0 0 0 3px rgba(198,40,40,0.12);
+}
+
+/* ── Read-only / disabled ───────────────────────────────────── */
+.form-control[readonly],
+input[readonly] {
+  background: var(--clr-neutral-100);
+  color: var(--clr-text-secondary);
+  cursor: not-allowed;
+}
+
+.form-control:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ── Select arrow ───────────────────────────────────────────── */
+select.form-control,
+select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236E3EA3' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 14px) center;
+  padding-inline-end: 36px;
+}
+
+/* RTL — flip arrow position */
+[dir="rtl"] select.form-control,
+[dir="rtl"] select {
+  background-position: 14px center;
+  padding-inline-end: var(--input-padding-x);
+  padding-inline-start: 36px;
+}
+
+/* ── Form actions row ───────────────────────────────────────── */
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  padding-top: var(--space-6);
+  margin-top: var(--space-6);
+  border-top: 1px solid var(--clr-border);
+}
+
+/* ── Searchable input with dropdown ─────────────────────────── */
+.searchable-input {
+  position: relative;
+}
+
+.searchable-input .form-control {
+  padding-inline-end: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238A87A0' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center;
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 4px);
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  background: var(--clr-surface);
+  border: 1.5px solid var(--clr-brand-300);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-dropdown);
+  max-height: 240px;
+  overflow-y: auto;
+  display: none;
+}
+
+.search-results:not(:empty) {
+  display: block;
+}
+
+.search-result-item {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  border-bottom: 1px solid var(--clr-border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover {
+  background: var(--clr-brand-100);
+}
+
+.search-result-item .result-id {
+  font-size: var(--font-size-xs);
+  color: var(--clr-text-muted);
+  font-weight: var(--font-weight-medium);
+}
+
+.search-result-item .result-name {
+  color: var(--clr-text-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.search-result-item.no-results,
+.no-results {
+  padding: var(--space-4);
+  color: var(--clr-text-muted);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  cursor: default;
+}
+
+/* ── Error message under field ──────────────────────────────── */
+.field-error {
+  font-size: var(--font-size-xs);
+  color: var(--clr-error-600);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-1);
+}
+
+/* ── Checkbox / radio group ─────────────────────────────────── */
+.check-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  color: var(--clr-text-primary);
+}
+
+.check-item input[type="checkbox"],
+.check-item input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--clr-neutral-400);
+  border-radius: var(--radius-sm);
+  accent-color: var(--clr-primary);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* ── Amount words field ─────────────────────────────────────── */
+#amountLetters {
+  font-style: italic;
+  color: var(--clr-text-secondary);
+  background: var(--clr-neutral-50);
+}
+
+/* ── Search box with filter row ─────────────────────────────── */
+.filters-row {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+
+.search-box {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-box input {
+  padding-inline-start: 40px;
+  height: 40px;
+}
+
+.search-box::before {
+  content: '\f002';
+  font-family: 'Font Awesome 6 Free', 'FontAwesome';
+  font-weight: 900;
+  position: absolute;
+  inset-inline-start: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--clr-neutral-500);
+  font-size: var(--font-size-sm);
+  pointer-events: none;
+}
+
+.clear-search {
+  position: absolute;
+  inset-inline-end: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--clr-neutral-300);
+  color: var(--clr-neutral-700);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.clear-search:hover {
+  background: var(--clr-neutral-400);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.filter-group label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--clr-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+}
+
+.filter-group input[type="date"],
+.filter-group select {
+  height: 40px;
+  min-width: 160px;
+}
+
+.reset-date {
+  height: 40px;
+  padding: 0 var(--space-3);
+  background: var(--clr-neutral-100);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-xs);
+  color: var(--clr-text-secondary);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  align-self: flex-end;
+}
+
+.reset-date:hover {
+  background: var(--clr-neutral-200);
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .form-container {
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-group input[type="date"],
+  .filter-group select {
+    min-width: 0;
+    width: 100%;
+  }
+}

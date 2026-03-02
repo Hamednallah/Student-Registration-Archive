@@ -1,0 +1,216 @@
+/* ============================================================
+   LOGIN / INDEX PAGE
+   ============================================================ */
+
+/* ── Hero section ───────────────────────────────────────────── */
+#hero {
+  min-height: calc(50vh - var(--navbar-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-12) var(--space-6);
+  margin-top: calc(var(--space-8) * -1);
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(ellipse 120% 80% at 20% 30%, rgba(201, 163, 39, 0.3) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 100% at 80% 70%, rgba(42, 16, 64, 0.25) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 60% at 50% 0%, rgba(201, 163, 39, 0.3) 0%, transparent 50%),
+    linear-gradient(155deg, rgba(244, 242, 250, 0.7) 0%, rgba(237, 230, 248, 0.7) 40%),
+    url('../../assets/hero-bg.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  /* try multiply or soft-light */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Geometric ornament top-left */
+#hero::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  inset-inline-start: -80px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(90, 45, 138, 0.10) 0%, transparent 30%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Geometric ornament bottom-right */
+#hero::after {
+  content: '';
+  position: absolute;
+  bottom: -120px;
+  inset-inline-end: -120px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(201, 162, 39, 0.08) 0%, transparent 30%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ── Hero content box ───────────────────────────────────────── */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  animation: hero-enter var(--duration-slower) var(--ease-out) both;
+}
+
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-brand-900);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-3);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.hero-content p {
+  font-size: var(--font-size-lg);
+  color: var(--clr-neutral-600);
+  margin-bottom: var(--space-8);
+  line-height: var(--line-height-normal);
+}
+
+/* ── Login card ─────────────────────────────────────────────── */
+.login-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-brand-200);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-xl);
+  padding: var(--space-10);
+  text-align: start;
+  animation: hero-enter var(--duration-slower) var(--ease-out) 80ms both;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gold accent bar at top */
+.login-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent));
+}
+
+.login-card>p {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-brand-900);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+/* ── Login form inside card ─────────────────────────────────── */
+.login-card .form-group {
+  margin-bottom: var(--space-5);
+}
+
+#loginForm button[type="submit"],
+.login-card .btn-primary {
+  width: 100%;
+  height: var(--btn-height-lg);
+  font-size: var(--font-size-md);
+  margin-top: var(--space-2);
+}
+
+#loginError {
+  display: none;
+  color: var(--clr-error-600);
+  background: var(--clr-error-50);
+  border: 1px solid var(--clr-error-100);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-4);
+  text-align: center;
+}
+
+/* ── Authenticated features grid (shown when logged in) ─────── */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-6);
+  text-align: start;
+  animation: hero-enter var(--duration-slower) var(--ease-out) 80ms both;
+}
+
+.feature-card {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-brand-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.feature-card h3 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-brand-800);
+  line-height: var(--line-height-snug);
+}
+
+.feature-card p {
+  font-size: var(--font-size-sm);
+  color: var(--clr-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+/* Features sections (landing page) ────────────────────────── */
+#features,
+#about {
+  padding: var(--space-16) 0;
+}
+
+#features {
+  background: var(--clr-brand-50);
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  #hero {
+    padding: var(--space-8) var(--space-4);
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    text-align: start;
+  }
+
+  .hero-content h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .login-card {
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+  }
+}

@@ -1,0 +1,205 @@
+/* ============================================================
+   RESET & BASE ELEMENT STYLES
+   ============================================================ */
+
+/* Modern CSS reset ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--clr-text-primary);
+  background-color: var(--clr-bg);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Structural scaffold ────────────────────────────────────── */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content {
+  flex: 1;
+  padding: var(--space-8) 0;
+}
+
+/* ── Links ──────────────────────────────────────────────────── */
+a {
+  color: var(--clr-text-link);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--clr-text-link-hover);
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--clr-border-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Media ──────────────────────────────────────────────────── */
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── Lists ──────────────────────────────────────────────────── */
+ul,
+ol {
+  list-style: none;
+}
+
+/* ── Form primitives ────────────────────────────────────────── */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ── Table primitives ───────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* ── Horizontal rule ────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid var(--clr-border);
+  margin: var(--space-6) 0;
+}
+
+/* ── Focus ring (keyboard-only) ─────────────────────────────── */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--clr-border-focus);
+  outline-offset: 2px;
+}
+
+/* ── Selection colour ───────────────────────────────────────── */
+::selection {
+  background-color: var(--clr-brand-300);
+  color: var(--clr-brand-900);
+}
+
+/* ── Scrollbar (WebKit) ─────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clr-neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-brand-300);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-brand-500);
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+#footer {
+  background: var(--clr-brand-900);
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  padding: var(--space-6) 0;
+  font-size: var(--font-size-sm);
+  margin-top: auto;
+}
+
+#footer p {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ── App loading screen ─────────────────────────────────────── */
+#app-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: var(--space-4);
+  background: var(--clr-bg);
+  color: var(--clr-text-secondary);
+  font-size: var(--font-size-base);
+}
+
+/* ── Error container (fatal JS errors) ─────────────────────── */
+.error-container {
+  max-width: 600px;
+  margin: var(--space-16) auto;
+  padding: var(--space-8);
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  text-align: center;
+}
+
+.error-container h1 {
+  color: var(--clr-error-600);
+  margin-bottom: var(--space-4);
+}
+
+.error-container pre {
+  background: var(--clr-neutral-100);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  text-align: start;
+  font-size: var(--font-size-xs);
+  overflow: auto;
+  max-height: 200px;
+  margin: var(--space-4) 0;
+}

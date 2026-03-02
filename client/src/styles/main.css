@@ -1,0 +1,45 @@
+/* ============================================================
+   main.css — PSAU Student Registration System
+   Master CSS entry point.
+
+   Architecture:
+     base/        — Design tokens, reset, typography
+     layout/      — Container grid, navbar
+     components/  — Reusable UI components
+     pages/       — Page-specific styles
+     utils/       — RTL support, print media queries
+
+   Import order matters:
+     1. Variables must come first (everything else references them)
+     2. Reset before any element styling
+     3. Layout before components
+     4. Page overrides last (most specific)
+     5. Utils after everything (cross-cutting concerns)
+   ============================================================ */
+
+/* 1. Design tokens ─────────────────────────────────────────── */
+@import url('./base/_variables.css');
+
+/* 2. Reset & base ──────────────────────────────────────────── */
+@import url('./base/_reset.css');
+@import url('./base/_typography.css');
+
+/* 3. Layout ────────────────────────────────────────────────── */
+@import url('./layout/_layout.css');
+@import url('./layout/_navbar.css');
+
+/* 4. Components ────────────────────────────────────────────── */
+@import url('./components/_buttons.css');
+@import url('./components/_forms.css');
+@import url('./components/_tables.css');
+@import url('./components/_alerts.css');
+@import url('./components/_loading.css');
+
+/* 5. Pages ─────────────────────────────────────────────────── */
+@import url('./pages/_login.css');
+@import url('./pages/_dashboard.css');
+@import url('./pages/_receipts.css');
+
+/* 6. Utilities ─────────────────────────────────────────────── */
+@import url('./utils/_rtl.css');
+@import url('./utils/_print.css');

@@ -1,0 +1,221 @@
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+/* ── Base button ────────────────────────────────────────────── */
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-danger,
+.btn-ghost,
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: var(--btn-height-md);
+  padding: 0 var(--btn-padding-x-md);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--btn-font-weight);
+  line-height: 1;
+  border-radius: var(--btn-radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    transform var(--duration-fast) var(--ease-spring),
+    opacity var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.btn:active,
+.btn-primary:active,
+.btn-secondary:active,
+.btn-danger:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled,
+.btn[disabled],
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.btn-danger:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ── Ripple pseudo ──────────────────────────────────────────── */
+.btn::before,
+.btn-primary::before,
+.btn-secondary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0);
+  transition: background var(--transition-fast);
+  border-radius: inherit;
+}
+
+.btn:hover::before,
+.btn-primary:hover::before,
+.btn-secondary:hover::before {
+  background: rgba(255,255,255,0.07);
+}
+
+/* ── Primary ────────────────────────────────────────────────── */
+.btn-primary,
+.btn.btn-primary {
+  background: var(--clr-primary);
+  color: var(--clr-text-on-brand);
+  border-color: var(--clr-primary);
+  box-shadow: var(--shadow-brand);
+}
+
+.btn-primary:hover {
+  background: var(--clr-primary-dark);
+  border-color: var(--clr-primary-dark);
+  box-shadow: 0 6px 20px rgba(90,45,138,0.40);
+  text-decoration: none;
+  color: var(--clr-text-on-brand);
+}
+
+/* ── Secondary / outlined ───────────────────────────────────── */
+.btn-secondary,
+.btn.btn-secondary,
+button.btn-secondary {
+  background: var(--clr-surface);
+  color: var(--clr-primary);
+  border-color: var(--clr-brand-300);
+  box-shadow: var(--shadow-xs);
+}
+
+.btn-secondary:hover {
+  background: var(--clr-brand-100);
+  border-color: var(--clr-primary);
+  color: var(--clr-primary-dark);
+  text-decoration: none;
+}
+
+/* ── Danger ─────────────────────────────────────────────────── */
+.btn-danger,
+.btn.btn-danger {
+  background: var(--clr-error-600);
+  color: #FFFFFF;
+  border-color: var(--clr-error-600);
+  box-shadow: 0 4px 12px rgba(198,40,40,0.25);
+}
+
+.btn-danger:hover {
+  background: var(--clr-error-700);
+  border-color: var(--clr-error-700);
+  box-shadow: 0 6px 16px rgba(198,40,40,0.35);
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* ── Ghost (no background) ──────────────────────────────────── */
+.btn-ghost {
+  background: transparent;
+  color: var(--clr-text-secondary);
+  border-color: transparent;
+}
+
+.btn-ghost:hover {
+  background: var(--clr-neutral-100);
+  color: var(--clr-text-primary);
+  text-decoration: none;
+}
+
+/* ── Small / Large sizes ────────────────────────────────────── */
+.btn-sm {
+  height: var(--btn-height-sm);
+  padding: 0 var(--btn-padding-x-sm);
+  font-size: var(--font-size-xs);
+}
+
+.btn-lg {
+  height: var(--btn-height-lg);
+  padding: 0 var(--btn-padding-x-lg);
+  font-size: var(--font-size-md);
+}
+
+/* ── Full width ─────────────────────────────────────────────── */
+.btn-block {
+  width: 100%;
+}
+
+/* ── Icon-only button ───────────────────────────────────────── */
+.btn-icon {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: var(--radius-md);
+  background: var(--clr-neutral-100);
+  color: var(--clr-neutral-600);
+  border: 1px solid var(--clr-border);
+  flex-shrink: 0;
+}
+
+.btn-icon:hover {
+  background: var(--clr-brand-100);
+  color: var(--clr-primary);
+  border-color: var(--clr-brand-300);
+}
+
+.btn-icon.btn-delete {
+  background: var(--clr-error-50);
+  color: var(--clr-error-600);
+  border-color: rgba(198,40,40,0.20);
+}
+
+.btn-icon.btn-delete:hover {
+  background: var(--clr-error-100);
+  border-color: var(--clr-error-600);
+}
+
+/* ── Loading state ──────────────────────────────────────────── */
+.btn-loading {
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.btn-loading::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  animation: btn-spin 0.7s linear infinite;
+  margin-inline-start: var(--space-2);
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Action group (row of buttons) ─────────────────────────── */
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* ── Table action cell ──────────────────────────────────────── */
+td.actions,
+.actions-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: nowrap;
+}

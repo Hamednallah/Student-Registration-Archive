@@ -1,0 +1,212 @@
+/* ============================================================
+   ALERTS, TOASTS & MESSAGES
+   ============================================================ */
+
+/* ── Toast container (fixed, floating) ──────────────────────── */
+#message-container {
+  position: fixed;
+  top: calc(var(--navbar-height) + var(--space-4));
+  inset-inline-end: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  z-index: var(--z-toast);
+  pointer-events: none;
+  max-width: 380px;
+}
+
+/* ── Toast / message card ───────────────────────────────────── */
+.message,
+.success-message,
+.error-message,
+.info-message {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-lg);
+  border: 1px solid transparent;
+  box-shadow: var(--shadow-lg);
+  animation: toast-in var(--duration-slow) var(--ease-spring) both;
+  pointer-events: all;
+  min-width: 260px;
+  position: relative;
+  overflow: hidden;
+}
+
+.message::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: var(--radius-full) 0 0 var(--radius-full);
+}
+
+/* ── Variants ───────────────────────────────────────────────── */
+.success-message,
+.message.success-message {
+  background: var(--clr-success-50);
+  border-color: var(--clr-success-100);
+  color: var(--clr-success-700);
+}
+
+.success-message::before {
+  background: var(--clr-success-600);
+}
+
+.error-message,
+.message.error-message {
+  background: var(--clr-error-50);
+  border-color: var(--clr-error-100);
+  color: var(--clr-error-700);
+}
+
+.error-message::before {
+  background: var(--clr-error-600);
+}
+
+.info-message,
+.message.info-message {
+  background: var(--clr-info-50);
+  border-color: var(--clr-info-100);
+  color: var(--clr-info-700);
+}
+
+.info-message::before {
+  background: var(--clr-info-600);
+}
+
+/* ── Icon inside message ────────────────────────────────────── */
+.message-icon {
+  flex-shrink: 0;
+  font-size: var(--font-size-lg);
+  margin-top: 1px;
+}
+
+/* ── Text ───────────────────────────────────────────────────── */
+.message-content {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-snug);
+}
+
+/* ── Close button ───────────────────────────────────────────── */
+.message-close {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  opacity: 0.5;
+  background: transparent;
+  border: none;
+  line-height: 1;
+  color: inherit;
+  transition: opacity var(--transition-fast), background var(--transition-fast);
+  padding: 0;
+}
+
+.message-close:hover {
+  opacity: 1;
+  background: rgba(0,0,0,0.08);
+}
+
+/* ── Inline alert (inside page content, not floating) ───────── */
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-lg);
+  border: 1px solid transparent;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-4);
+}
+
+.alert-success {
+  background: var(--clr-success-50);
+  border-color: var(--clr-success-100);
+  color: var(--clr-success-700);
+}
+
+.alert-error {
+  background: var(--clr-error-50);
+  border-color: var(--clr-error-100);
+  color: var(--clr-error-700);
+}
+
+.alert-warning {
+  background: var(--clr-warning-50);
+  border-color: var(--clr-warning-100);
+  color: var(--clr-warning-700);
+}
+
+.alert-info {
+  background: var(--clr-info-50);
+  border-color: var(--clr-info-100);
+  color: var(--clr-info-700);
+}
+
+.alert i {
+  flex-shrink: 0;
+  font-size: var(--font-size-lg);
+  margin-top: 1px;
+}
+
+/* ── Error message inside tables / containers ───────────────── */
+.error-message:not(#message-container .error-message) {
+  /* Inline usage inside a div — not a toast */
+  position: static;
+  animation: none;
+  pointer-events: all;
+}
+
+/* ── Toast animation ────────────────────────────────────────── */
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(40px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+[dir="rtl"] @keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(-40px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* ── No-data text ───────────────────────────────────────────── */
+.no-data {
+  color: var(--clr-text-muted);
+  font-size: var(--font-size-sm);
+  text-align: center;
+  padding: var(--space-6);
+}
+
+/* ── Loading message (inside widget/card) ───────────────────── */
+.loading-message {
+  color: var(--clr-text-muted);
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  justify-content: center;
+  padding: var(--space-6);
+}

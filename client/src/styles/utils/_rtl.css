@@ -1,0 +1,95 @@
+/* ============================================================
+   RTL UTILITIES
+   All overrides needed when [dir="rtl"] is active.
+   The base styles use logical CSS properties (start/end)
+   wherever possible, so this file stays intentionally thin —
+   only things that still need explicit RTL overrides.
+   ============================================================ */
+
+/* ── Body direction ─────────────────────────────────────────── */
+[dir="rtl"] body {
+  text-align: right;
+}
+
+/* ── Select arrow position ──────────────────────────────────── */
+/* Already handled in _forms.css via [dir="rtl"] block */
+
+/* ── Table actions: reverse button order ────────────────────── */
+[dir="rtl"] td.actions {
+  flex-direction: row-reverse;
+}
+
+/* ── Toast animation ────────────────────────────────────────── */
+[dir="rtl"] .message,
+[dir="rtl"] .success-message,
+[dir="rtl"] .error-message,
+[dir="rtl"] .info-message {
+  animation-name: toast-in-rtl;
+}
+
+@keyframes toast-in-rtl {
+  from {
+    opacity: 0;
+    transform: translateX(-40px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* ── Toast container ────────────────────────────────────────── */
+[dir="rtl"] #message-container {
+  /* logical property already handles this — keeping for clarity */
+  inset-inline-end: var(--space-5);
+}
+
+/* ── Navbar: brand pushes nav items to opposite edge ─────────── */
+/* No override needed — navbar-nav uses margin-inline-start: auto */
+
+/* ── Page title underline ───────────────────────────────────── */
+[dir="rtl"] .page-title::after {
+  inset-inline-start: 0; /* already logical, no change needed */
+}
+
+/* ── Hero text alignment ────────────────────────────────────── */
+[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+[dir="rtl"] .login-card > p {
+  text-align: right;
+}
+
+/* ── Search box icon position ───────────────────────────────── */
+[dir="rtl"] .search-box::before {
+  inset-inline-start: auto;
+  inset-inline-end: 13px;
+  left: auto;
+}
+
+[dir="rtl"] .search-box input {
+  padding-inline-start: var(--input-padding-x);
+  padding-inline-end: 40px;
+}
+
+/* ── Stat card accent bar ───────────────────────────────────── */
+[dir="rtl"] .stat-card::before {
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+/* ── Widget accent bar ──────────────────────────────────────── */
+[dir="rtl"] .widget h2::before {
+  /* stays on right side in RTL */
+}
+
+/* ── Form container heading underline ───────────────────────── */
+[dir="rtl"] .form-container h1::before {
+  inset-inline-start: 0;
+}
+
+/* ── Print template direction ───────────────────────────────── */
+[dir="rtl"] .print-receipt-body {
+  direction: rtl;
+  text-align: right;
+}

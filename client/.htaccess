@@ -1,0 +1,46 @@
+# Handle 404 errors
+ErrorDocument 404 /src/pages/404.html
+
+# Rewrite rules for SPA support
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # If the requested resource doesn't exist
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  
+  # For assets in the old root locations, redirect to src locations
+  RewriteRule ^service-worker\.js$ /src/service-worker.js [L,R=301]
+  RewriteRule ^main\.css$ /src/styles/main.css [L,R=301]
+  RewriteRule ^main\.js$ /src/main.js [L,R=301]
+  RewriteRule ^logo\.png$ /src/assets/logo.png [L,R=301]
+  RewriteRule ^logo2\.png$ /src/assets/logo2.png [L,R=301]
+  RewriteRule ^manifest\.json$ /src/manifest.json [L,R=301]
+  
+  # For all other requests that don't exist, load index.html
+  RewriteRule ^(.*)$ /src/pages/index.html [L]
+</IfModule>
+
+# Set MIME types
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType text/css .css
+  AddType application/json .json
+</IfModule>
+
+# Set MIME types for JavaScript modules
+AddType application/javascript .mjs
+
+# Enable CORS
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+  Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+  Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
+</IfModule>
+
+# Cache control - don't cache during development
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 0 seconds"
+    ExpiresByType application/javascript "access plus 0 seconds"
+</IfModule> 

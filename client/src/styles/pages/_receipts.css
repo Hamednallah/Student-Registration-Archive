@@ -1,0 +1,181 @@
+/* ============================================================
+   RECEIPTS PAGE
+   ============================================================ */
+
+/* ── Receipt form title area ────────────────────────────────── */
+#newReceiptForm .form-group:first-child label,
+#editReceiptForm .form-group:first-child label,
+#viewReceiptForm .form-group:first-child label {
+  font-weight: var(--font-weight-bold);
+}
+
+/* ── View-mode paid items display ───────────────────────────── */
+.view-paid-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: var(--space-3) 0;
+}
+
+.view-paid-items .badge {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+}
+
+/* ── Paid-items checkboxes ──────────────────────────────────── */
+.paid-items-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  padding: var(--space-3) 0;
+}
+
+.paid-item-checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  padding: var(--space-2) var(--space-4);
+  background: var(--clr-neutral-50);
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.paid-item-checkbox input:checked + span {
+  color: var(--clr-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.paid-item-checkbox:has(input:checked) {
+  background: var(--clr-brand-100);
+  border-color: var(--clr-brand-400);
+}
+
+/* ── Export button area (top of list) ───────────────────────── */
+.list-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-4);
+}
+
+/* ── Receipt list header row ────────────────────────────────── */
+.receipts-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+/* ============================================================
+   PRINT TEMPLATE (opened in new window via printReceiptTemplate)
+   ============================================================ */
+.print-receipt-body {
+  font-family: 'Tajawal', 'Arial', sans-serif;
+  direction: rtl;
+  padding: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #1a1a2e;
+  background: #fff;
+}
+
+.print-receipt-body.ltr {
+  direction: ltr;
+}
+
+.print-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #5A2D8A;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.print-header img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.print-university-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3D1E60;
+}
+
+.print-receipt-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #5A2D8A;
+  margin-top: 4px;
+}
+
+.print-receipt-id {
+  font-size: 13px;
+  color: #64607A;
+  background: #F3EEF9;
+  padding: 3px 12px;
+  border-radius: 99px;
+}
+
+/* Print table */
+.print-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.print-table tr {
+  border-bottom: 1px solid #E8E6F2;
+}
+
+.print-table .label {
+  width: 38%;
+  padding: 10px 8px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #46395E;
+  background: #FAF8FD;
+}
+
+.print-table td:not(.label) {
+  padding: 10px 8px;
+  font-size: 13px;
+  color: #1C1430;
+}
+
+.print-receipt-footer {
+  margin-top: 36px;
+  padding-top: 16px;
+  border-top: 1px dashed #C4A8E0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #8A87A0;
+}
+
+/* Watermark (diagonal "PAID" stamp) */
+.print-watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 80px;
+  font-weight: 800;
+  color: rgba(90,45,138,0.05);
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: 0.2em;
+  white-space: nowrap;
+}
