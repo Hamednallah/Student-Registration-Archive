@@ -1,0 +1,16 @@
+[2025-03-19T18:27:39.906Z] Starting database setup...
+[2025-03-19T18:27:39.910Z] Attempting to connect with user: SRRA
+[2025-03-19T18:27:39.910Z] Connection string: localhost:1521/orcl
+[2025-03-19T18:27:39.911Z] Connecting to database...
+[2025-03-19T18:27:39.964Z] Connected to database successfully
+[2025-03-19T18:27:39.964Z] Dropping existing objects...
+[2025-03-19T18:27:39.977Z] Warning: TABLE SRRA.RECEIPT does not exist
+[2025-03-19T18:27:39.996Z] Warning: TABLE SRRA.STUDENT does not exist
+[2025-03-19T18:27:39.999Z] Warning: TABLE SRRA.DEPARTMENT does not exist
+[2025-03-19T18:27:40.002Z] Warning: TABLE SRRA.USERS does not exist
+[2025-03-19T18:27:40.003Z] Error during database setup:
+[2025-03-19T18:27:40.004Z] {
+  "errorNum": 933,
+  "offset": 37
+}
+[2025-03-19T18:27:40.006Z] Database connection closed

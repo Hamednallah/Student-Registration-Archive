@@ -1,0 +1,35 @@
+[2025-03-19T18:29:53.246Z] Starting database setup script
+[2025-03-19T18:29:53.252Z] Starting database setup process
+[2025-03-19T18:29:53.252Z] Using database user: SRRA
+[2025-03-19T18:29:53.252Z] Using connection string: localhost:1521/orcl
+[2025-03-19T18:29:53.253Z] Connecting to Oracle database...
+[2025-03-19T18:29:53.302Z] Connected to database successfully
+[2025-03-19T18:29:53.303Z] Dropping existing database objects...
+[2025-03-19T18:29:53.313Z] Warning: TABLE SRRA.RECEIPT does not exist
+[2025-03-19T18:29:53.317Z] Warning: TABLE SRRA.STUDENT does not exist
+[2025-03-19T18:29:53.320Z] Warning: TABLE SRRA.DEPARTMENT does not exist
+[2025-03-19T18:29:53.322Z] Warning: TABLE SRRA.USERS does not exist
+[2025-03-19T18:29:53.328Z] Dropped SEQUENCE SRRA.DEPARTMENT_ID_SEQ successfully
+[2025-03-19T18:29:53.334Z] Dropped SEQUENCE SRRA.RECEIPT_ID_SEQ successfully
+[2025-03-19T18:29:53.335Z] Executing database schema script...
+[2025-03-19T18:29:53.335Z] Reading SQL file: D:\Projects\Port Sudan National University Student Registration Receipts Archive\last\server\scripts\db-schema.sql
+[2025-03-19T18:29:53.336Z] Found 18 SQL statements to execute
+[2025-03-19T18:29:53.336Z] Executing statement 1/18: -- Database schema setup script for Port Sudan Ahlia University
+-- Student Registr...
+[2025-03-19T18:29:53.350Z] Statement 1 executed successfully
+[2025-03-19T18:29:53.350Z] Executing statement 2/18: CREATE SEQUENCE SRRA.RECEIPT_ID_SEQ START WITH 1 INCREMENT BY 1...
+[2025-03-19T18:29:53.354Z] Statement 2 executed successfully
+[2025-03-19T18:29:53.354Z] Executing statement 3/18: -- Create department table with auto-generated ID
+CREATE TABLE SRRA.DEPARTMENT ...
+[2025-03-19T18:29:53.355Z] Error executing statement 3: ORA-00984: column not allowed here
+[2025-03-19T18:29:53.356Z] Full statement: -- Create department table with auto-generated ID
+CREATE TABLE SRRA.DEPARTMENT (
+  DEPARTMENT_ID VARCHAR2(15) DEFAULT 'D' || TO_CHAR(SRRA.DEPARTMENT_ID_SEQ.NEXTVAL, 'FM000000') PRIMARY KEY NOT NULL,
+  DEPARTMENT_NAME VARCHAR2(150) NOT NULL,
+  SEMESTERS_NO NUMBER(2) NOT NULL
+)
+[2025-03-19T18:29:53.356Z] Error executing script: ORA-00984: column not allowed here
+[2025-03-19T18:29:53.356Z] Error during database setup:
+[2025-03-19T18:29:53.357Z] Error message: ORA-00984: column not allowed here
+[2025-03-19T18:29:53.357Z] Oracle error code: 984
+[2025-03-19T18:29:53.359Z] Database connection closed

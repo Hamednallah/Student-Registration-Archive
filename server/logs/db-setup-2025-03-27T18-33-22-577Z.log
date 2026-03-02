@@ -1,0 +1,12 @@
+[2025-03-27T18:33:22.579Z] Starting database setup script
+[2025-03-27T18:33:22.581Z] Starting database setup process
+[2025-03-27T18:33:22.581Z] Using database user: SRRA
+[2025-03-27T18:33:22.582Z] Using connection string: localhost:1521/orcl
+[2025-03-27T18:33:22.582Z] Connecting to Oracle database...
+[2025-03-27T18:33:22.621Z] Starting database setup process
+[2025-03-27T18:33:22.621Z] Using database user: SRRA
+[2025-03-27T18:33:22.622Z] Using connection string: localhost:1521/orcl
+[2025-03-27T18:33:22.623Z] Connecting to Oracle database...
+[2025-03-27T18:33:24.788Z] Error during database setup:
+[2025-03-27T18:33:24.789Z] Error message: ORA-12541: TNS:no listener
+[2025-03-27T18:33:24.790Z] Oracle error code: 12541

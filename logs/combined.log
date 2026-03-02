@@ -1,0 +1,877 @@
+2025-03-17T03:22:40.945Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:29:22)"
+}
+2025-03-17T03:22:41.126Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:50:7)"
+}
+2025-03-17T03:22:41.398Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:67:22)"
+}
+2025-03-17T03:22:41.772Z [ERROR]: Error getting user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:48:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:77:7)"
+}
+2025-03-17T03:22:42.146Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:91:7)"
+}
+2025-03-17T03:22:42.731Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:113:7)"
+}
+2025-03-17T03:22:43.089Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:130:7)"
+}
+2025-03-17T03:22:43.460Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:150:22)"
+}
+2025-03-17T03:22:44.003Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:172:22)"
+}
+2025-03-17T03:22:44.519Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:201:22)"
+}
+2025-03-17T03:23:30.645Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:39:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:29:22)"
+}
+2025-03-17T03:23:31.091Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:39:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:50:7)"
+}
+2025-03-17T03:23:31.491Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:39:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:67:22)"
+}
+2025-03-17T03:23:31.894Z [ERROR]: Error getting user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:39:20)\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:48:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:77:7)"
+}
+2025-03-17T03:23:32.423Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:39:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:91:7)"
+}
+2025-03-17T03:23:33.072Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:39:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:113:7)"
+}
+2025-03-17T03:23:33.512Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:39:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:130:7)"
+}
+2025-03-17T03:23:33.926Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:39:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:150:22)"
+}
+2025-03-17T03:23:34.325Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:39:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:172:22)"
+}
+2025-03-17T03:23:34.732Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:39:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:201:22)"
+}
+2025-03-17T03:24:12.629Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:29:22)"
+}
+2025-03-17T03:24:12.683Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:50:7)"
+}
+2025-03-17T03:24:12.966Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:67:22)"
+}
+2025-03-17T03:24:13.445Z [ERROR]: Error getting user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:48:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:77:7)"
+}
+2025-03-17T03:24:13.816Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:91:7)"
+}
+2025-03-17T03:24:14.549Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:113:7)"
+}
+2025-03-17T03:24:14.939Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:130:7)"
+}
+2025-03-17T03:24:15.314Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:150:22)"
+}
+2025-03-17T03:24:15.830Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:172:22)"
+}
+2025-03-17T03:24:16.071Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:201:22)"
+}
+2025-03-17T03:24:54.437Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:29:22)"
+}
+2025-03-17T03:24:54.705Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:50:7)"
+}
+2025-03-17T03:24:54.755Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:67:22)"
+}
+2025-03-17T03:24:54.810Z [ERROR]: Error getting user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:48:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:77:7)"
+}
+2025-03-17T03:24:55.260Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:91:7)"
+}
+2025-03-17T03:24:56.051Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:113:7)"
+}
+2025-03-17T03:24:56.464Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:130:7)"
+}
+2025-03-17T03:24:56.832Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:150:22)"
+}
+2025-03-17T03:24:57.207Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:172:22)"
+}
+2025-03-17T03:24:57.591Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:201:22)"
+}
+2025-03-17T03:26:22.922Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:29:22)"
+}
+2025-03-17T03:26:23.008Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:50:7)"
+}
+2025-03-17T03:26:23.063Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:67:22)"
+}
+2025-03-17T03:26:23.120Z [ERROR]: Error getting user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:48:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:77:7)"
+}
+2025-03-17T03:26:23.491Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:91:7)"
+}
+2025-03-17T03:26:24.258Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:113:7)"
+}
+2025-03-17T03:26:24.744Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:130:7)"
+}
+2025-03-17T03:26:25.234Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:150:22)"
+}
+2025-03-17T03:26:25.614Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:172:22)"
+}
+2025-03-17T03:26:25.976Z [ERROR]: Error creating user: ORA-01036: illegal variable name/number
+Metadata: {
+  "errorNum": 1036,
+  "offset": 0,
+  "stack": "Error: ORA-01036: illegal variable name/number\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:42:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:26:27)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:201:22)"
+}
+2025-03-17T03:35:10.577Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n      RETURNING USER_ID\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$gXB..y9AWMWrBMZsdT26A.o4aFVvxtIwlbe9YBVGBkt2KaM7QO1Pq",
+    "role": "U"
+  },
+  "error": "ORA-00925: missing INTO keyword"
+}
+2025-03-17T03:35:10.583Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:29:22)"
+}
+2025-03-17T03:35:11.166Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n      RETURNING USER_ID\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$KkljjrOF/fE0U/mIIAYYGOBO2CbWrHWhsn.W0v4SsdcmDY.Nxa/La",
+    "role": "U"
+  },
+  "error": "ORA-00925: missing INTO keyword"
+}
+2025-03-17T03:35:11.170Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:50:7)"
+}
+2025-03-17T03:35:11.514Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n      RETURNING USER_ID\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$.Oh32AoVZ.Ak/hu2aKuAG.DQr6viDNpZ4Fo.09C73ZRvBASkCZKjC",
+    "role": "U"
+  },
+  "error": "ORA-00925: missing INTO keyword"
+}
+2025-03-17T03:35:11.543Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:67:22)"
+}
+2025-03-17T03:35:11.628Z [ERROR]: Error getting user: User not found
+Metadata: {
+  "stack": "Error: User not found\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:50:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:77:7)"
+}
+2025-03-17T03:35:12.487Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n      RETURNING USER_ID\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$H/81BtAEHoraDQ5ZnxRPyOSKn.3Gxe4Djgm0BbxcS9gGSnNkDFvr.",
+    "role": "U"
+  },
+  "error": "ORA-00925: missing INTO keyword"
+}
+2025-03-17T03:35:12.608Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:91:7)"
+}
+2025-03-17T03:35:13.668Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n      RETURNING USER_ID\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$cX1uvOBVD3n7FMfikuDfY.5TvTlpniUGgGwAaE8JpC7wOg1HU6Tl.",
+    "role": "U"
+  },
+  "error": "ORA-00925: missing INTO keyword"
+}
+2025-03-17T03:35:13.793Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:113:7)"
+}
+2025-03-17T03:35:14.273Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n      RETURNING USER_ID\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$1zRHMAlASRdbsVEJHrGMAuVyzrkKMGeEowSSKqfQhdH7Uh4xYbtCC",
+    "role": "U"
+  },
+  "error": "ORA-00925: missing INTO keyword"
+}
+2025-03-17T03:35:14.275Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:130:7)"
+}
+2025-03-17T03:35:14.855Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n      RETURNING USER_ID\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$.xXUcXXCd2IoopS14cOQ1u2N5A3RIC73v//g.NXpplnquzHS1MJ/e",
+    "role": "U"
+  },
+  "error": "ORA-00925: missing INTO keyword"
+}
+2025-03-17T03:35:14.858Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:150:22)"
+}
+2025-03-17T03:35:15.628Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n      RETURNING USER_ID\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$9FryhZLgoqIj80uIoS8sFuS1RdWV/cQmb2gD2/smDOtMk2R.Matty",
+    "role": "U"
+  },
+  "error": "ORA-00925: missing INTO keyword"
+}
+2025-03-17T03:35:15.741Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:172:22)"
+}
+2025-03-17T03:35:16.233Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n      RETURNING USER_ID\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$/sUsZySoZL.eTcL1kxtsdea/2AyvRolMVx4f6MkxJS6m9oKYaR6LK",
+    "role": "U"
+  },
+  "error": "ORA-00925: missing INTO keyword"
+}
+2025-03-17T03:35:16.236Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:201:22)"
+}
+2025-03-17T03:36:25.297Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$Ubn/gOpWVWuFsWNXwP88FebCGby.dhdq0L6ef3/6wUW0p0wtAENCa",
+    "role": "U"
+  },
+  "error": "ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")"
+}
+2025-03-17T03:36:25.423Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:29:22)"
+}
+2025-03-17T03:36:26.142Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$heXTmGkmxQUDXzTbLLNi5ey8EyVjhW8RlbqvvRwYPrXZjk7gCFccC",
+    "role": "U"
+  },
+  "error": "ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")"
+}
+2025-03-17T03:36:26.145Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:50:7)"
+}
+2025-03-17T03:36:26.752Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$BzjB1Ct6E8QXqRxqFIXWDumq871CP9vvHHpCOv2GzjTasdT3WAx4i",
+    "role": "U"
+  },
+  "error": "ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")"
+}
+2025-03-17T03:36:26.755Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:67:22)"
+}
+2025-03-17T03:36:26.823Z [ERROR]: Error getting user: User not found
+Metadata: {
+  "stack": "Error: User not found\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:55:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:77:7)"
+}
+2025-03-17T03:36:27.165Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$Xc9Q84ztMP7VjkfZkoydtODPh8TRYabbcES2wqwvBQeW7jgNIkEa.",
+    "role": "U"
+  },
+  "error": "ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")"
+}
+2025-03-17T03:36:27.167Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:91:7)"
+}
+2025-03-17T03:36:27.998Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$AF9HS5/KXp6rVMRYYPzUFeAhpsEkOwFRtjN8HBnTpEm01A2GbzZMm",
+    "role": "U"
+  },
+  "error": "ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")"
+}
+2025-03-17T03:36:28.112Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:113:7)"
+}
+2025-03-17T03:36:28.912Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$PV4yRq82zYNH9TVvYyddvOUysDjKAJ3ateXWWcTrXwGyc938zYwbm",
+    "role": "U"
+  },
+  "error": "ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")"
+}
+2025-03-17T03:36:29.038Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:130:7)"
+}
+2025-03-17T03:36:29.520Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$pPLJPV/KXpg7uJ6VsSYbLubaD8cHUuv4HSZeONZhMhlCD45NVJ/tC",
+    "role": "U"
+  },
+  "error": "ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")"
+}
+2025-03-17T03:36:29.523Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:150:22)"
+}
+2025-03-17T03:36:30.269Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$qn.kxeZgLAW8zQyc4dnQYePku3qDRQDx3TGvRvWgphEk.g/f7ajv2",
+    "role": "U"
+  },
+  "error": "ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")"
+}
+2025-03-17T03:36:30.272Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:172:22)"
+}
+2025-03-17T03:36:31.139Z [ERROR]: Error executing query:
+Metadata: {
+  "query": "\n      INSERT INTO SRRA.USERS (USER_NAME, HASHED_PASSWORD, ROLE)\n      VALUES (:username, :password, :role)\n    ",
+  "binds": {
+    "username": "testuser1",
+    "password": "$2b$12$qI5bMNgwMm81XwOv39r8VufVjTZFrsM7pdMpPg387uqiUyfFOepGu",
+    "role": "U"
+  },
+  "error": "ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")"
+}
+2025-03-17T03:36:31.262Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:51:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:201:22)"
+}
+2025-03-17T03:37:48.791Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:50:7)"
+}
+2025-03-17T03:37:49.414Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:67:22)"
+}
+2025-03-17T03:37:49.834Z [ERROR]: Error getting user: User not found
+Metadata: {
+  "stack": "Error: User not found\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:53:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:77:7)"
+}
+2025-03-17T03:37:50.252Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:91:7)"
+}
+2025-03-17T03:37:51.336Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:113:7)"
+}
+2025-03-17T03:37:51.765Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:130:7)"
+}
+2025-03-17T03:37:52.308Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:150:22)"
+}
+2025-03-17T03:37:52.716Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:172:22)"
+}
+2025-03-17T03:37:53.123Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:201:22)"
+}
+2025-03-17T12:59:03.954Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:29:22)"
+}
+2025-03-17T12:59:04.059Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:50:7)"
+}
+2025-03-17T12:59:04.113Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:67:22)"
+}
+2025-03-17T12:59:04.174Z [ERROR]: Error getting user: User not found
+Metadata: {
+  "stack": "Error: User not found\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:50:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:77:7)"
+}
+2025-03-17T12:59:04.261Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:91:7)"
+}
+2025-03-17T12:59:04.474Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:113:7)"
+}
+2025-03-17T12:59:04.529Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:130:7)"
+}
+2025-03-17T12:59:04.590Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:150:22)"
+}
+2025-03-17T12:59:04.659Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:172:22)"
+}
+2025-03-17T12:59:04.797Z [ERROR]: Error creating user: Username already exists
+Metadata: {
+  "stack": "Error: Username already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:28:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:201:22)"
+}
+2025-03-17T13:04:20.774Z [ERROR]: Error executing query:
+2025-03-17T13:04:20.784Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:28:22)"
+}
+2025-03-17T13:04:21.407Z [ERROR]: Error executing query:
+2025-03-17T13:04:21.410Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:49:7)"
+}
+2025-03-17T13:04:21.747Z [ERROR]: Error executing query:
+2025-03-17T13:04:21.754Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:66:22)"
+}
+2025-03-17T13:04:22.095Z [ERROR]: Error getting user: User not found
+Metadata: {
+  "stack": "Error: User not found\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:50:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:76:7)"
+}
+2025-03-17T13:04:22.758Z [ERROR]: Error executing query:
+2025-03-17T13:04:22.761Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:90:7)"
+}
+2025-03-17T13:04:23.211Z [ERROR]: Error executing query:
+2025-03-17T13:04:23.316Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:112:7)"
+}
+2025-03-17T13:04:23.756Z [ERROR]: Error executing query:
+2025-03-17T13:04:23.868Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:128:7)"
+}
+2025-03-17T13:04:24.429Z [ERROR]: Error executing query:
+2025-03-17T13:04:24.433Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:147:22)"
+}
+2025-03-17T13:04:24.944Z [ERROR]: Error executing query:
+2025-03-17T13:04:24.946Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:169:22)"
+}
+2025-03-17T13:04:25.321Z [ERROR]: Error executing query:
+2025-03-17T13:04:25.323Z [ERROR]: Error creating user: ORA-00925: missing INTO keyword
+Metadata: {
+  "errorNum": 925,
+  "offset": 136,
+  "stack": "Error: ORA-00925: missing INTO keyword\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:32:22)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:197:22)"
+}
+2025-03-17T13:05:20.197Z [ERROR]: Error executing query:
+2025-03-17T13:05:20.391Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:37:7)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:28:22)"
+}
+2025-03-17T13:05:20.863Z [ERROR]: Error executing query:
+2025-03-17T13:05:20.985Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:37:7)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:49:7)"
+}
+2025-03-17T13:05:21.469Z [ERROR]: Error executing query:
+2025-03-17T13:05:21.592Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:37:7)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:66:22)"
+}
+2025-03-17T13:05:21.759Z [ERROR]: Error getting user: User not found
+Metadata: {
+  "stack": "Error: User not found\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:57:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:76:7)"
+}
+2025-03-17T13:05:22.223Z [ERROR]: Error executing query:
+2025-03-17T13:05:22.356Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:37:7)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:90:7)"
+}
+2025-03-17T13:05:23.471Z [ERROR]: Error executing query:
+2025-03-17T13:05:23.474Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:37:7)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:112:7)"
+}
+2025-03-17T13:05:23.920Z [ERROR]: Error executing query:
+2025-03-17T13:05:24.072Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:37:7)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:128:7)"
+}
+2025-03-17T13:05:24.567Z [ERROR]: Error executing query:
+2025-03-17T13:05:24.570Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:37:7)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:147:22)"
+}
+2025-03-17T13:05:25.076Z [ERROR]: Error executing query:
+2025-03-17T13:05:25.211Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:37:7)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:169:22)"
+}
+2025-03-17T13:05:25.770Z [ERROR]: Error executing query:
+2025-03-17T13:05:25.773Z [ERROR]: Error creating user: ORA-01400: cannot insert NULL into ("SRRA"."USERS"."USER_ID")
+Metadata: {
+  "errorNum": 1400,
+  "offset": 0,
+  "stack": "Error: ORA-01400: cannot insert NULL into (\"SRRA\".\"USERS\".\"USER_ID\")\n    at executeQuery (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:33:20)\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:37:7)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:197:22)"
+}
+2025-03-17T13:08:37.786Z [ERROR]: Error creating user: Username or User ID already exists
+Metadata: {
+  "stack": "Error: Username or User ID already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:54:7)"
+}
+2025-03-17T13:08:38.504Z [ERROR]: Error getting user: User not found
+Metadata: {
+  "stack": "Error: User not found\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:54:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:79:7)"
+}
+2025-03-17T13:08:43.447Z [ERROR]: Error verifying password: data and hash arguments required
+Metadata: {
+  "stack": "Error: data and hash arguments required\n    at Object.compare (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n    at D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\node_modules\\bcrypt\\promises.js:29:12\n    at new Promise (<anonymous>)\n    at Object.<anonymous>.module.exports.promise (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\node_modules\\bcrypt\\promises.js:20:12)\n    at Object.compare (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n    at Object.compare [as verifyPassword] (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:129:27)\n    at Object.verifyPassword (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:189:39)"
+}
+2025-03-17T13:08:44.079Z [ERROR]: Error getting user: User not found
+Metadata: {
+  "stack": "Error: User not found\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:54:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:212:7)"
+}
+2025-03-17T13:12:21.273Z [ERROR]: Error creating user: Username or User ID already exists
+Metadata: {
+  "stack": "Error: Username or User ID already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:54:7)"
+}
+2025-03-17T13:12:22.479Z [ERROR]: Error getting user: User not found
+Metadata: {
+  "stack": "Error: User not found\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:54:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:79:7)"
+}
+2025-03-17T13:12:28.581Z [ERROR]: Error creating user: Username or User ID already exists
+Metadata: {
+  "stack": "Error: Username or User ID already exists\n    at Object.createUser (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:31:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:154:22)"
+}
+2025-03-17T13:12:30.292Z [ERROR]: Error verifying password: data and hash arguments required
+Metadata: {
+  "stack": "Error: data and hash arguments required\n    at Object.compare (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n    at D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\node_modules\\bcrypt\\promises.js:29:12\n    at new Promise (<anonymous>)\n    at Object.<anonymous>.module.exports.promise (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\node_modules\\bcrypt\\promises.js:20:12)\n    at Object.compare (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n    at Object.compare [as verifyPassword] (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:131:27)\n    at Object.verifyPassword (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:189:39)"
+}
+2025-03-17T13:12:31.595Z [ERROR]: Error getting user: User not found
+Metadata: {
+  "stack": "Error: User not found\n    at Object.getUserById (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\models\\userModel.js:54:15)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\models\\userModel.test.js:212:7)"
+}
+2025-03-18T18:43:53.525Z [ERROR]: Error executing query:
+2025-03-18T18:43:53.581Z [ERROR]: Error executing query:
+2025-03-18T18:43:53.771Z [ERROR]: Error executing query:
+2025-03-19T02:41:58.304Z [ERROR]: Error getting database connection:
+Metadata: {
+  "error": "NJS-047: poolAlias \"default\" not found in the connection pool cache",
+  "stack": "Error: NJS-047: poolAlias \"default\" not found in the connection pool cache\n    at OracleDb.getPool (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\node_modules\\oracledb\\lib\\oracledb.js:149:13)\n    at getPool (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:41:39)\n    at Object.getConnection (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\server\\database\\connection.test.js:13:30)\n    at Promise.then.completed (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
+}
+2025-03-19T02:41:58.314Z [INFO]: Attempting to reinitialize the connection pool
+2025-03-19T02:41:58.650Z [ERROR]: Error creating Oracle connection pool:
+Metadata: {
+  "error": "ORA-12514: TNS:listener does not currently know of service requested in connect descriptor",
+  "stack": "Error: ORA-12514: TNS:listener does not currently know of service requested in connect descriptor\n    at initialize (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:17:5)\n    at getConnection (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:50:9)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\server\\database\\connection.test.js:13:24)"
+}
+2025-03-19T02:41:58.652Z [ERROR]: Failed to reinitialize connection pool:
+Metadata: {
+  "error": "Failed to create connection pool: ORA-12514: TNS:listener does not currently know of service requested in connect descriptor",
+  "stack": "Error: Failed to create connection pool: ORA-12514: TNS:listener does not currently know of service requested in connect descriptor\n    at initialize (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:22:11)\n    at getConnection (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:50:9)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\server\\database\\connection.test.js:13:24)"
+}
+2025-03-19T02:41:58.659Z [ERROR]: Error getting database connection:
+Metadata: {
+  "error": "NJS-047: poolAlias \"default\" not found in the connection pool cache",
+  "stack": "Error: NJS-047: poolAlias \"default\" not found in the connection pool cache\n    at OracleDb.getPool (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\node_modules\\oracledb\\lib\\oracledb.js:149:13)\n    at getPool (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:41:39)\n    at Object.getConnection (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\server\\database\\connection.test.js:22:18)\n    at Promise.then.completed (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at _runTest (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\node_modules\\jest-runner\\build\\runTest.js:444:34)"
+}
+2025-03-19T02:41:58.662Z [INFO]: Attempting to reinitialize the connection pool
+2025-03-19T02:41:58.700Z [ERROR]: Error creating Oracle connection pool:
+Metadata: {
+  "error": "ORA-12514: TNS:listener does not currently know of service requested in connect descriptor",
+  "stack": "Error: ORA-12514: TNS:listener does not currently know of service requested in connect descriptor\n    at initialize (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:17:5)\n    at getConnection (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:50:9)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\server\\database\\connection.test.js:22:5)"
+}
+2025-03-19T02:41:58.701Z [ERROR]: Failed to reinitialize connection pool:
+Metadata: {
+  "error": "Failed to create connection pool: ORA-12514: TNS:listener does not currently know of service requested in connect descriptor",
+  "stack": "Error: Failed to create connection pool: ORA-12514: TNS:listener does not currently know of service requested in connect descriptor\n    at initialize (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:22:11)\n    at getConnection (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\server\\config\\database.js:50:9)\n    at Object.<anonymous> (D:\\Projects\\Port Sudan National University Student Registration Receipts Archive\\last\\tests\\server\\database\\connection.test.js:22:5)"
+}

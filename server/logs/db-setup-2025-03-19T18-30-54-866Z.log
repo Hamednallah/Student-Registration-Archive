@@ -1,0 +1,24 @@
+[2025-03-19T18:30:54.870Z] Starting database setup script
+[2025-03-19T18:30:54.876Z] Starting database setup process
+[2025-03-19T18:30:54.876Z] Using database user: SRRA
+[2025-03-19T18:30:54.876Z] Using connection string: localhost:1521/orcl
+[2025-03-19T18:30:54.877Z] Connecting to Oracle database...
+[2025-03-19T18:30:54.939Z] Connected to database successfully
+[2025-03-19T18:30:54.940Z] Dropping existing database objects...
+[2025-03-19T18:30:54.945Z] Warning: TABLE SRRA.RECEIPT does not exist
+[2025-03-19T18:30:54.949Z] Warning: TABLE SRRA.STUDENT does not exist
+[2025-03-19T18:30:54.952Z] Warning: TABLE SRRA.DEPARTMENT does not exist
+[2025-03-19T18:30:54.955Z] Warning: TABLE SRRA.USERS does not exist
+[2025-03-19T18:30:54.962Z] Dropped SEQUENCE SRRA.DEPARTMENT_ID_SEQ successfully
+[2025-03-19T18:30:54.966Z] Dropped SEQUENCE SRRA.RECEIPT_ID_SEQ successfully
+[2025-03-19T18:30:54.967Z] Executing database schema script...
+[2025-03-19T18:30:54.968Z] Reading SQL file: D:\Projects\Port Sudan National University Student Registration Receipts Archive\last\server\scripts\db-schema.sql
+[2025-03-19T18:30:54.969Z] Found 20 SQL statements to execute
+[2025-03-19T18:30:54.969Z] Executing statement 1/20: CREATE SEQUENCE SRRA.DEPARTMENT_ID_SEQ START WITH 1 INCREMENT BY 1;...
+[2025-03-19T18:30:54.990Z] Error executing statement 1: ORA-00911: invalid character
+[2025-03-19T18:30:54.990Z] Full statement: CREATE SEQUENCE SRRA.DEPARTMENT_ID_SEQ START WITH 1 INCREMENT BY 1;
+[2025-03-19T18:30:54.991Z] Error executing script: ORA-00911: invalid character
+[2025-03-19T18:30:54.991Z] Error during database setup:
+[2025-03-19T18:30:54.991Z] Error message: ORA-00911: invalid character
+[2025-03-19T18:30:54.992Z] Oracle error code: 911
+[2025-03-19T18:30:54.995Z] Database connection closed
