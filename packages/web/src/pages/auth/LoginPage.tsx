@@ -30,16 +30,17 @@ export function LoginPage() {
     };
 
     const errorMsg = mutation.isError
-        ? (mutation.error as any)?.response?.data?.error?.message_ar || 'خطأ في بيانات الدخول'
+        ? (mutation.error as any)?.response?.data?.error?.message_ar || 'اسم المستخدم أو كلمة المرور غير صحيحة'
         : null;
 
     return (
         <div className="login-page">
             <div className="login-card">
-                <div className="login-logo">
-                    <div className="logo-icon">🎓</div>
+                {/* University logo mark */}
+                <div className="login-header">
+                    <div className="login-logo-mark">🎓</div>
                     <h2>نظام الإدارة الأكاديمية</h2>
-                    <p>جامعة الأمير سطام بن عبدالعزيز</p>
+                    <p>جامعة بورتسودان الأهلية</p>
                 </div>
 
                 {errorMsg && (
@@ -50,7 +51,7 @@ export function LoginPage() {
                 )}
 
                 <form onSubmit={handleSubmit} noValidate>
-                    <div className="form-group mb-4">
+                    <div className="form-group">
                         <label className="form-label required" htmlFor="username">
                             اسم المستخدم
                         </label>
@@ -67,7 +68,7 @@ export function LoginPage() {
                         />
                     </div>
 
-                    <div className="form-group mb-6">
+                    <div className="form-group">
                         <label className="form-label required" htmlFor="password">
                             كلمة المرور
                         </label>
@@ -93,10 +94,11 @@ export function LoginPage() {
                                     transform: 'translateY(-50%)',
                                     background: 'transparent',
                                     border: 'none',
-                                    color: 'var(--color-text-muted)',
+                                    color: 'var(--clr-text-muted)',
                                     cursor: 'pointer',
                                     fontSize: '1rem',
                                     lineHeight: 1,
+                                    padding: 0,
                                 }}
                                 aria-label={showPassword ? 'إخفاء كلمة المرور' : 'إظهار كلمة المرور'}
                             >
@@ -107,7 +109,7 @@ export function LoginPage() {
 
                     <button
                         type="submit"
-                        className={`btn btn-primary btn-full btn-lg ${mutation.isPending ? 'btn-loading' : ''}`}
+                        className={`btn btn-primary btn-block btn-lg mt-4 ${mutation.isPending ? 'btn-loading' : ''}`}
                         disabled={mutation.isPending || !form.username || !form.password}
                     >
                         {mutation.isPending ? '' : 'تسجيل الدخول'}
@@ -117,7 +119,7 @@ export function LoginPage() {
                 <p className="text-center text-xs text-muted mt-6" style={{ lineHeight: 1.8 }}>
                     نظام آمن — بيانات 30,000 طالب محمية
                     <br />
-                    <span className="latin">PSAU Academic System v2.0</span>
+                    <span className="latin">Port Sudan Ahlia University — Academic System v2.0</span>
                 </p>
             </div>
         </div>

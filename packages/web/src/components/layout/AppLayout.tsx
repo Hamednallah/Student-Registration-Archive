@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 
 const ROLE_LABELS: Record<string, string> = {
@@ -10,75 +10,66 @@ const ROLE_LABELS: Record<string, string> = {
 };
 
 const navItems = [
-    { path: '/', icon: '📊', label: 'لوحة التحكم', exact: true },
-    { path: '/students', icon: '👥', label: 'الطلاب', roles: ['ADMIN', 'REGISTRAR', 'COORDINATOR'] },
-    { path: '/enrollments', icon: '📋', label: 'التسجيل', roles: ['ADMIN', 'REGISTRAR'] },
-    { path: '/grades', icon: '📝', label: 'الدرجات', roles: ['ADMIN', 'REGISTRAR', 'INSTRUCTOR'] },
+    { path: '/', label: 'الرئيسية', exact: true },
+    { path: '/students', label: 'الطلاب', roles: ['ADMIN', 'REGISTRAR', 'COORDINATOR'] },
+    { path: '/enrollments', label: 'التسجيل', roles: ['ADMIN', 'REGISTRAR'] },
+    { path: '/grades', label: 'الدرجات', roles: ['ADMIN', 'REGISTRAR', 'INSTRUCTOR'] },
 ];
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
     const { user, logout } = useAuthStore();
-    const navigate = useNavigate();
 
     const visibleNav = navItems.filter(
         (item) => !item.roles || (user && item.roles.includes(user.role))
     );
 
-    const userInitials = user?.username?.slice(0, 2).toUpperCase() ?? '??';
-
     return (
         <div className="app-layout">
-            {/* Sidebar */}
-            <aside className="sidebar">
-                <div className="sidebar-logo">
-                    <h1>🎓 PSAU</h1>
-                    <p>نظام الإدارة الأكاديمية</p>
-                </div>
+            {/* Navbar */}
+            <nav className="main-navbar" role="navigation" aria-label="القائمة الرئيسية">
+                <div className="navbar-inner">
+                    {/* Brand */}
+                    <NavLink to="/" className="navbar-brand" aria-label="الصفحة الرئيسية">
+                        <div className="brand-logo-circle" aria-hidden="true">🎓</div>
+                        <span className="brand-title">جامعة بورتسودان الأهلية</span>
+                    </NavLink>
 
-                <nav className="nav-section" aria-label="القائمة الرئيسية">
-                    <div className="nav-section-title">القائمة</div>
-                    {visibleNav.map((item) => (
-                        <NavLink
-                            key={item.path}
-                            to={item.path}
-                            end={item.exact}
-                            className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
-                        >
-                            <span className="nav-icon" aria-hidden="true">{item.icon}</span>
-                            {item.label}
-                        </NavLink>
-                    ))}
-                </nav>
+                    {/* Nav links */}
+                    <div className="navbar-nav">
+                        {visibleNav.map((item) => (
+                            <NavLink
+                                key={item.path}
+                                to={item.path}
+                                end={item.exact}
+                                className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+                            >
+                                {item.label}
+                            </NavLink>
+                        ))}
+                    </div>
 
-                <div className="sidebar-footer">
-                    <div className="user-info">
-                        <div className="user-avatar" aria-hidden="true">{userInitials}</div>
-                        <div style={{ flex: 1, overflow: 'hidden' }}>
-                            <div className="user-name truncate">{user?.username}</div>
-                            <div className="user-role">{ROLE_LABELS[user?.role ?? ''] ?? user?.role}</div>
-                        </div>
+                    {/* User + logout */}
+                    <div className="flex items-center gap-3">
+                        {user && (
+                            <div className="user-pill">
+                                <span className="user-name">{user.username}</span>
+                                <span className="user-role-tag">{ROLE_LABELS[user.role] ?? user.role}</span>
+                            </div>
+                        )}
                         <button
                             onClick={logout}
-                            className="btn btn-ghost btn-sm"
+                            className="btn-logout-nav"
                             aria-label="تسجيل الخروج"
-                            title="تسجيل الخروج"
-                            style={{ flexShrink: 0 }}
                         >
-                            🚪
+                            تسجيل الخروج
                         </button>
                     </div>
                 </div>
-            </aside>
+            </nav>
 
-            {/* Main content */}
-            <main className="main-content" id="main-content">
-                <header className="page-header">
-                    <div style={{ flex: 1 }} />
-                    <span className="text-xs text-muted latin">v2.0.0</span>
-                </header>
-                <div className="page-body">
-                    {children}
-                </div>
+            {/* Page content */}
+            <main className="page-content" id="main-content">
+                {children}
             </main>
         </div>
     );
