@@ -13,6 +13,7 @@
         "@psau/shared": "workspace:*",
         "@tanstack/react-query": "^5.0.0",
         "@tanstack/react-table": "^8.0.0",
+        "axios": "^1.13.6",
         "react": "^18.3.0",
         "react-dom": "^18.3.0",
         "react-router-dom": "^6.0.0",
