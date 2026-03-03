@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: psau-api-dev
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=development
+      - PORT=8080
+      - DATABASE_URL=sqlite:./data/psau.db
+      - JWT_SECRET=dev_secret_do_not_use_in_prod_12345
+      - SWAGGER_ENABLED=true
+      - ALLOWED_ORIGINS=http://localhost:5173
+      - REDIS_ENABLED=false
+    volumes:
+      - ./packages/api:/app/packages/api
+      - ./packages/shared:/app/packages/shared
+      - ./data:/app/data
+    command: pnpm --filter @psau/api dev
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.web
+    container_name: psau-web-dev
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8080/api/v1
+    volumes:
+      - ./packages/web:/app/packages/web
+      - ./packages/shared:/app/packages/shared
+    command: pnpm --filter @psau/web dev
+    depends_on:
+      - api

@@ -1,0 +1,22 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install pnpm
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
+# Copy workspace config
+COPY pnpm-workspace.yaml package.json pnpm-lock.yaml* ./
+COPY packages/shared/package.json ./packages/shared/
+COPY packages/web/package.json ./packages/web/
+
+# Install dependencies
+RUN pnpm install --filter @psau/shared... --filter @psau/web...
+
+# Copy source
+COPY packages/shared ./packages/shared
+COPY packages/web ./packages/web
+COPY tsconfig.json ./
+
+EXPOSE 5173
+CMD ["pnpm", "--filter", "@psau/web", "dev"]

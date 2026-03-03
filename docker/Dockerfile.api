@@ -1,0 +1,38 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install dependencies needed for Puppeteer & native builds
+RUN apk add --no-cache \
+    python3 \
+    make \
+    g++ \
+    chromium \
+    nss \
+    freetype \
+    freetype-dev \
+    harfbuzz \
+    ca-certificates \
+    ttf-freefont
+
+# Install pnpm
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
+# Copy workspace config
+COPY pnpm-workspace.yaml package.json pnpm-lock.yaml* ./
+COPY packages/shared/package.json ./packages/shared/
+COPY packages/api/package.json ./packages/api/
+
+# Install dependencies (only required for shared + api)
+RUN pnpm install --filter @psau/shared... --filter @psau/api...
+
+# Copy source
+COPY packages/shared ./packages/shared
+COPY packages/api ./packages/api
+COPY tsconfig.json ./
+
+# Build shared package (needed for api types)
+RUN pnpm --filter @psau/shared build
+
+EXPOSE 8080
+CMD ["pnpm", "--filter", "@psau/api", "start"]

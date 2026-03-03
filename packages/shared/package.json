@@ -1,0 +1,20 @@
+{
+    "name": "@psau/shared",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "test": "vitest run",
+        "test:coverage": "vitest run --coverage",
+        "type-check": "tsc --noEmit"
+    },
+    "dependencies": {
+        "zod": "^3.23.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.4.0",
+        "vitest": "^1.4.0"
+    }
+}
