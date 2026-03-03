@@ -1,0 +1,105 @@
+# ============================================================
+# TEST ENVIRONMENT
+# Used by CI/CD and local integration testing
+# PostgreSQL 15 + Redis 7 — mirrors production dependencies
+# Usage: docker compose -f docker/docker-compose.test.yml up --abort-on-container-exit
+# ============================================================
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: psau-postgres-test
+    environment:
+      POSTGRES_DB: psau_test
+      POSTGRES_USER: psau_test
+      POSTGRES_PASSWORD: psau_test_password
+    ports:
+      - "5433:5432"           # Non-standard port to avoid conflict with local postgres
+    volumes:
+      - psau-test-pg:/var/lib/postgresql/data
+      - ../packages/api/db/migrations:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U psau_test -d psau_test"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    tmpfs:
+      - /var/lib/postgresql/data   # Use tmpfs for speed (tests don't need persistence)
+
+  redis:
+    image: redis:7-alpine
+    container_name: psau-redis-test
+    command: redis-server --save "" --appendonly no   # No persistence needed for tests
+    ports:
+      - "6380:6379"           # Non-standard port
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  api-test:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.api
+      target: build-api          # Use build stage (has dev dependencies for tests)
+    container_name: psau-api-test
+    command: pnpm --filter @psau/api test:integration
+    environment:
+      NODE_ENV: test
+      PORT: 8080
+      DATABASE_URL: postgresql://psau_test:psau_test_password@postgres:5432/psau_test
+      REDIS_URL: redis://redis:6379
+      REDIS_ENABLED: "true"
+      JWT_SECRET: test-secret-at-least-32-characters-long-for-ci
+      JWT_REFRESH_SECRET: test-refresh-secret-at-least-32-chars-long
+      JWT_ACCESS_EXPIRES_IN: 15m
+      JWT_REFRESH_EXPIRES_IN: 7d
+      LOG_LEVEL: warn             # Reduce noise during tests
+      CORS_ORIGINS: http://localhost:3000
+      BACKUP_SCHEDULER_ENABLED: "false"
+      SWAGGER_ENABLED: "false"
+      # Test-specific
+      SEED_TEST_DATA: "true"
+      BYPASS_RATE_LIMIT: "true"   # Rate limiting breaks integration tests
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  web-test:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.web
+      target: build              # Build stage (has test runner)
+    container_name: psau-web-test
+    command: pnpm --filter @psau/web test:unit
+    environment:
+      NODE_ENV: test
+
+  e2e:
+    image: mcr.microsoft.com/playwright:v1.44.0-jammy
+    container_name: psau-e2e
+    working_dir: /app
+    command: pnpm --filter @psau/web test:e2e
+    volumes:
+      - ../packages/web:/app/packages/web
+      - ../packages/shared:/app/packages/shared
+    environment:
+      BASE_URL: http://api-test:8080
+      CI: "true"
+      PWDEBUG: "0"
+    depends_on:
+      api-test:
+        condition: service_started
+
+volumes:
+  psau-test-pg:
+    name: psau-test-pg
+
+networks:
+  default:
+    name: psau-test
